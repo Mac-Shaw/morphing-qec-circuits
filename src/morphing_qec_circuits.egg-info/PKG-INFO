@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: morphing-qec-circuits
+Version: 0.1.0
+Summary: A package for morphing quantum error correction circuits.
+Author-email: Mackenzie Shaw <mac@interfine.com.au>
+Maintainer-email: Mackenzie Shaw <mac@interfine.com.au>
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: galois
+Requires-Dist: surface_sim>=0.10.1
+Requires-Dist: stim>=1.15.0
+Requires-Dist: mle_decoder>=0.2.0
+Requires-Dist: gurobipy
+Requires-Dist: numba
+Dynamic: license-file
+
+# morphing-qec-circuits
+Package for morphing quantum error correction circuits.
+
+Contains helper functions to generate stim circuits corresponding to morphing QEC circuits. Contains a "MorphingSpecifications" class that stores the defining features of a morphing QEC circuit (mid-cycle code stabilisers, contraction circuits). This is then used to generate stim circuits corresponding to memory and stability experiments using the morphing specification. Also contains helper functions to calculate the static code distance and circuit-level distance. Finally, there are a number of morphing circuits for Bivariate Bicycle codes, colour codes, and toric codes, as described in `arXiv:2407.16336` and `arXiv:2604.09797`.
+
+Need to update everything below here.
+
+# Installation
+
+No particular tricks or special moves required to install this repo, just `git clone` the repository and run.
+
+Required packages:
+- `numpy`, `copy`, `galois`, `random`, `collections` for general calculations.
+- `stim` and `surface_sim` for describing and simulating Clifford quantum circuits. `surface_sim` is available at `https://github.com/MarcSerraPeralta/surface-sim/tree/main`.
+- `gurobipy` for calculating the static code distance (requires valid Gurobi license)
+
+# Usage
+
+See `Example.ipynb` for examples of usage.
+
+# Contact
+
+For troubleshooting issues, or general questions, contact me (Mackenzie Shaw) at `m.h.shaw@tudelft.nl`.

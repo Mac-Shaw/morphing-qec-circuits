@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morphing-qec-circuits"
+version = "0.1.0"
+description = "A package for morphing quantum error correction circuits."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    { name = "Mackenzie Shaw", email = "mac@interfine.com.au" },
+]
+maintainers = [
+    { name = "Mackenzie Shaw", email = "mac@interfine.com.au" },
+]
+
+dependencies = [
+    "numpy >= 1.26.4",
+    "galois",
+    "surface_sim >= 0.10.1",
+    "stim >= 1.15.0",
+    "mle_decoder >= 0.2.0",
+    "gurobipy",
+    "numba",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+license-files = ["LICENSE"]

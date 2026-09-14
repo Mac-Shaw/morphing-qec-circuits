@@ -1,0 +1,11 @@
+from .CSS_morphing_specifications import CSSMorphingSpecifications
+from .morphing_specifications import MorphingSpecifications
+from .library import (
+    get_triangular_half_shifted_hex_morphing_specifications,
+    get_unoptimised_shifted_hex_morphing_specifications,
+    get_triangular_half_shifted_hex_morphing_specifications_extra_qubits,
+    get_triangular_half_shifted_hex_morphing_specifications_even_more_layers,
+    get_fault_tolerant_triangular_half_shifted_hex_morphing_specifications,
+    get_rectangular_centred_hex_morphing_specifications,
+    get_3D_toric_code_morphing_specifications,
+)
